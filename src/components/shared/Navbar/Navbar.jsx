@@ -15,7 +15,7 @@ const links = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="w-full h-[95px] px-2 sm:p-4 flex justify-between items-center bg-main-100 text-white">
+    <header className="w-full h-[95px] p-2 sm:p-4 flex justify-between items-center bg-main-100 text-white">
       <button className="p-4 flex justify-center items-center gap-2">
         <FaArrowLeft />
         <span className="text-lg">Customer</span>
