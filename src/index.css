@@ -11,3 +11,7 @@
   scrollbar-width: thin;
   scrollbar-color:  #0d0d0d #232e33;
 }
+
+body {
+  background-color: #0d0d0d;
+}

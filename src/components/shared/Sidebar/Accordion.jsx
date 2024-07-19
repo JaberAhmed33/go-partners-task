@@ -6,10 +6,10 @@ export default function Accordion({title, icon, children}) {
     const [open, setOpen] = useState(false);
 
   return (
-    <div className="text-md text-slate-300 p-4 border-b border-slate-300/55 w-[98%]">
-      <button className="flex justify-between items-center w-full p-2 transition-all duration-300 ease-in-out" onClick={() => setOpen(!open)}>
+    <div className="text-[15px] md:text-base xl:text-md text-slate-300 md:p-2 xl:p-4 border-b border-slate-300/55 w-[98%]">
+      <button className="flex justify-between items-center w-full py-2 md:p-2 transition-all duration-300 ease-in-out" onClick={() => setOpen(!open)}>
         <div className={`flex justify-center items-center gap-2 ${open && "text-white"}`}> {icon}
-        <span className={`${open && "font-semibold text-white"}`}>{title}</span></div>
+        <span className={`${open && "lg:font-semibold text-white"}`}>{title}</span></div>
         {
           open ? <IoMdArrowDropright  className="text-white"/> : <IoMdArrowDropdown />
         }

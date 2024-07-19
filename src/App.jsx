@@ -6,12 +6,12 @@ import Pagination from "./components/Content/Pagination";
 function App() {
 
   return (
-    <main className="bg-main-200 h-[calc(100vh-95px)] w-[75%] p-4 flex flex-col">
+    <main className="bg-main-200 h-[calc(100vh-95px)] w-full lg:w-[75%] px-2 sm:p-4 flex flex-col">
     <CardList />
 
-    <section className="w-full px-8 flex flex-col items-start mb-4">
-      <h5 className="text-3xl font-semibold text-slate-100 mb-4">Withdrawals</h5>
-      <button className="bg-primary text-md tracking-widest px-3 py-2 rounded-lg text-slate-100 flex items-center gap-2"><AiOutlinePlus />  Add Withdrawals</button>
+    <section className="w-full sm:px-8 flex justify-between items-center sm:flex-col sm:items-start my-4">
+      <h5 className="text-md sm:text-xl lg:text-2xl xl:text-3xl font-semibold text-slate-100 mb-2 md:mb-4">Withdrawals</h5>
+      <button className="bg-primary text-sm md:text-md tracking-wides px-2 py-1 t md:px-3 md:py-2 rounded-lg text-slate-100 flex items-center gap-2"><AiOutlinePlus />  Add Withdrawals</button>
     </section>
 
     <Table />
