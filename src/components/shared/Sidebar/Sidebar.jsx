@@ -77,7 +77,7 @@ export default function Sidebar() {
    
     </aside>
     
-    <div className={`text-primary w-fit h-fit bg-primary/50 p-1 rounded-full cursor-pointer lg:hidden z-50 ${open ? "absolute bottom-[16px] left-[211px]" : "fixed left-[8px] bottom-1/2"}`}>
+    <div title="profile info" className={`text-primary w-fit h-fit bg-primary/50 p-1 rounded-full cursor-pointer lg:hidden z-50 ${open ? "absolute bottom-[16px] left-[211px]" : "fixed left-[8px] bottom-1/2"}`}>
       {
         open ? <MdDoubleArrow onClick={() => setOpen(false)} className="transition-all duration-300 delay-300 ease-in-out text-primary rotate-180" size={35} /> 
         : <MdDoubleArrow onClick={() => setOpen(true)} className="text-primary transition-all duration-300 ease-in-out" size={35} />
